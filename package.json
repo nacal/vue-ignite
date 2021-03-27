@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "igniteui-webcomponents-core": "^1.2.2",
+    "igniteui-webcomponents-grids": "^1.2.2",
+    "igniteui-webcomponents-inputs": "^1.2.2",
+    "igniteui-webcomponents-layouts": "^1.2.2",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2"
