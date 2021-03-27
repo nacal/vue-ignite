@@ -1,16 +1,19 @@
 <template>
-  <igc-data-grid
-    height="100%"
-    width="100%"
-    auto-generate-columns="true"
-    ref="grid"
-  >
-  </igc-data-grid>
+  <div>
+    <igc-data-grid
+      height="100%"
+      width="100%"
+      auto-generate-columns="true"
+      ref="grid"
+    />
+    <igc-category-chart id="chart" width="100%" height="500px" ref="chart" />
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { IgcDataGridComponent } from "igniteui-webcomponents-grids";
+import { IgcCategoryChartComponent } from "igniteui-webcomponents-charts";
 
 @Component
 export default class HelloWorld extends Vue {
@@ -85,6 +88,9 @@ export default class HelloWorld extends Vue {
     const igcGrid = this.$refs.grid as IgcDataGridComponent;
     console.log(igcGrid);
     igcGrid.dataSource = this.dataSource;
+
+    const igcChart = this.$refs.chart as IgcCategoryChartComponent;
+    igcChart.dataSource = this.dataSource;
   }
 }
 </script>
