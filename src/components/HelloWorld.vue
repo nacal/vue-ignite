@@ -6,7 +6,7 @@
       auto-generate-columns="true"
       ref="grid"
     />
-    <igc-category-chart id="chart" width="100%" height="500px" ref="chart" />
+    <igc-category-chart id="chart" width="100%" height="420px" ref="chart" />
   </div>
 </template>
 
